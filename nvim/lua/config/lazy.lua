@@ -21,20 +21,8 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
--- 行番号の表示
-vim.opt.number = true
-
--- ==============================
--- インデント設定
--- ==============================
--- タブをスペースに変換する
-vim.opt.expandtab = true
--- タブ文字を4文字分で見せる（既存ファイル用）
-vim.opt.tabstop = 4
--- 自動インデントや「>>」での移動幅
-vim.opt.shiftwidth = 4
--- Tabキーを押したときに入るスペースの数
-vim.opt.softtabstop = 4
+-- Neovimのオプション設定
+require("config.options")
 
 -- Setup lazy.nvim
 require("lazy").setup({
