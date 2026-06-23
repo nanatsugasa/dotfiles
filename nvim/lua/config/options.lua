@@ -27,3 +27,8 @@ vim.opt.shiftwidth = 4
 -- Tabキーを押したときに入るスペースの数
 vim.opt.softtabstop = 4
 
+-- ==============================
+-- シェル設定
+-- ==============================
+-- PowerShellを使うように設定
+vim.opt.shell = 'pwsh'
